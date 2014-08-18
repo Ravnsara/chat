@@ -21,7 +21,7 @@ chatTop10.on("value", function(chatObj){
 	for(var key in chatObj){
 		outputString += chatObj[key] + '<br />';
 	}
-	output.empty().append(emotify(outputString));	
+	output.empty().append(outputString);	
 });
 
 userRef.on("value", function(userObj){
